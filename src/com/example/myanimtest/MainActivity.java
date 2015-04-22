@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
             protected void applyTransformation(float interpolatedTime, Transformation t) {
                 if (interpolatedTime >= 1) {
                     v.setVisibility(View.GONE);
+                    // TODO remove item from adapter here
                 }
                 else {
                     v.getLayoutParams().height = initialHeight - (int)(initialHeight * interpolatedTime);
